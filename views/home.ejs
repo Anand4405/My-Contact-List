@@ -18,16 +18,23 @@
         <div id="contacts-list-container">
             <ul>
         <%for (let i of contact_list) { %>
+            
             <li class='contact'>
                 <div class="details">
+                    <div class="delete-button">
+                        <a href="/delete-contact/?id=<%= i._id %>">
+                            <i class="fas fa-window-close"></i>
+                        </a>
+                    </div>
                 <p id="c-name"><%= i.name%></p>
+                <strong>:</strong>
             <p id="c-number"><%= i.phone %></p>
         </div>
-        <div class="delete-button">
+        <!-- <div class="delete-button">
             <a href="/delete-contact/?id=<%= i._id %>">
                 <i class="fas fa-window-close"></i>
             </a>
-        </div>
+        </div> -->
     </li>
         <%}%>
     </ul>
