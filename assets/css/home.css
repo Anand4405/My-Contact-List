@@ -54,9 +54,16 @@ margin-bottom: 20px;
 }
 
 .c-form{
+    width:100%;
     text-align: center;
 }
+.c-form form input{
+height:20px;
+width:20%;
+}
 .c-form form button{
+    height:30px;
+    border-radius: 10px;
     background: rgb(241, 6, 202);
 }
 
